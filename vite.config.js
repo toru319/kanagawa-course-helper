@@ -4,7 +4,6 @@ import eslint from 'vite-plugin-eslint';
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/kanagawa-course-helper/',
   plugins: [
     react(),
     eslint({
@@ -13,7 +12,4 @@ export default defineConfig({
       exclude: [],
     }),
   ],
-  build: {
-    outDir: 'build', // ビルド出力ディレクトリ
-  },
 })
